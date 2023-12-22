@@ -31,11 +31,15 @@
 }
 
 .shadow_gradient_pink {
-  box-shadow: 10px 10px 100px -10px #fc67fa;
+  box-shadow: 10px 10px 170px -10px #fc67fa;
 }
 
 .shadow_gradient_blue {
-  box-shadow: 10px 10px 120px -10px #67cffc;
+  box-shadow: 10px 10px 120px -15px #67cffc;
+}
+
+.heading {
+  @apply text-lg mx-auto text-center px-3 text-gray-900 w-[250px] py-2 border-b-4 border-yellow-600 font-semibold bg-yellow-300 rounded-3xl cursor-pointer;
 }
 
 @keyframes float {
@@ -76,4 +80,56 @@
   background: rgba(255, 128, 0, 0.6);
   filter: blur(150px);
   z-index: -1;
+}
+
+
+/* Service box animation  */
+
+.service_box {
+  overflow: hidden;
+  background-color: none;
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+  overflow-x: hidden;
+  mask-image: linear-gradient(to right,
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1) 10%,
+      hsl(0 0% 0% / 1) 90%,
+      hsl(0 0% 0% / 0));
+  margin-top: 20px;
+}
+
+.service_box:hover .card_box {
+  animation-play-state: paused;
+}
+
+.card_box {
+  margin: 10px auto;
+  animation: 15s slide infinite linear;
+  display: flex;
+  width: 2500px;
+  background-color: none;
+  white-space: nowrap;
+  margin-right: 20px;
+}
+
+
+.float {
+  flex: 0;
+  width: 200px;
+  cursor: pointer;
+  @apply text-5xl text-gray-400;
+  width: 250px;
+  margin: 20px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }

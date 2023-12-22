@@ -1,3 +1,5 @@
+import About from '@/component/About'
+import Skill from '@/component/Skill'
 import Button from '@/component/util/Button'
 import Typewritter from '@/component/util/Typewritter'
 import { faGithub, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons'
@@ -30,9 +32,13 @@ export default function Home() {
           <div className="cursor-pointer w-[200px] h-[50px] rounded-xl  flex items-center justify-start  gap-[10px] bg-gray-900 absolute bottom-0 left-0 animated shadow_gradient_pink ">
             <Image className='w-[30px] ml-2' width={100} height={100} src={'/image/application.png'} alt='daily' />  <h3 className='text-white text-sm '> Blockchain Enthusiast </h3>
           </div>
-          <div className="pink__gradient absolute w-[200px] h-[200px] bottom-0 right-0"></div>
+          {/* <div className="pink__gradient absolute w-[200px] h-[200px] bottom-0 right-0"></div> */}
         </div>
       </div>
+
+      {/* Other sections  */}
+      <About />
+      <Skill />
     </>
   )
 }
