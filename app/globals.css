@@ -2,26 +2,78 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  letter-spacing: 0.3px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.box_condition {
+  display: flex;
+}
+
+@media (max-width : 900px) {
+  .box_condition {
+    flex-direction: column;
+    padding-top: 40px;
+  }
+
+  .box_condition>div {
+    justify-content: center;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.animated {
+  animation: float 5s linear infinite;
+}
+
+.shadow_gradient_pink {
+  box-shadow: 10px 10px 100px -10px #fc67fa;
+}
+
+.shadow_gradient_blue {
+  box-shadow: 10px 10px 120px -10px #67cffc;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  25% {
+    transform: translateY(10px);
+  }
+
+  50% {
+    transform: translateY(0px);
+  }
+
+  75% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+  z-index: -1;
+}
+
+.pink__gradient {
+  background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(250px);
+  z-index: -1;
+}
+
+.white__gradient {
+  background: rgba(255, 128, 0, 0.6);
+  filter: blur(150px);
+  z-index: -1;
 }
