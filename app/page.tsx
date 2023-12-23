@@ -1,4 +1,6 @@
 import About from '@/component/About'
+import Projects from '@/component/Projects'
+import Services from '@/component/Services'
 import Skill from '@/component/Skill'
 import Button from '@/component/util/Button'
 import Typewritter from '@/component/util/Typewritter'
@@ -26,10 +28,10 @@ export default function Home() {
         {/* Right div  */}
         <div className="md:w-[50%] w-[100%] relative flex items-center justify-center md:mt-0 mt-[40px]  ">
           <Image className='xs:w-[400px] w-[300px]' src={'/image/tarun.png'} alt='logo' width={500} height={500} />
-          <div className="cursor-pointer w-[200px] h-[50px] rounded-xl  flex items-center justify-start  gap-[10px] bg-gray-900 absolute top-0 right-0 animated shadow_gradient_blue">
+          <div className="cursor-pointer w-[200px] h-[50px] rounded-xl  flex items-center justify-start  gap-[10px] bg-gray-900 absolute top-0 right-0 animated_card shadow_gradient_blue">
             <Image className='w-[30px] ml-2' width={100} height={100} src={'/image/algorithm.png'} alt='daily' />  <h3 className='text-white text-sm '> Gaming with code</h3>
           </div>
-          <div className="cursor-pointer w-[200px] h-[50px] rounded-xl  flex items-center justify-start  gap-[10px] bg-gray-900 absolute bottom-0 left-0 animated shadow_gradient_pink ">
+          <div className="cursor-pointer w-[200px] h-[50px] rounded-xl  flex items-center justify-start  gap-[10px] bg-gray-900 absolute bottom-0 left-0 animated_card shadow_gradient_pink ">
             <Image className='w-[30px] ml-2' width={100} height={100} src={'/image/application.png'} alt='daily' />  <h3 className='text-white text-sm '> Blockchain Enthusiast </h3>
           </div>
           {/* <div className="pink__gradient absolute w-[200px] h-[200px] bottom-0 right-0"></div> */}
@@ -39,6 +41,8 @@ export default function Home() {
       {/* Other sections  */}
       <About />
       <Skill />
+      <Projects />
+      <Services />
     </>
   )
 }
