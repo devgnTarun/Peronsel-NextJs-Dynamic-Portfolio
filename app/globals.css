@@ -82,6 +82,12 @@
   z-index: -1;
 }
 
+.purple__gradient {
+  background: rgba(106, 0, 255, 0.6);
+  filter: blur(150px);
+  z-index: -1;
+}
+
 
 /* Service box animation  */
 
@@ -135,4 +141,20 @@
 
 .hero-carousel {
   @apply relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[450px] h-[300px] w-[300px] rounded-[30px] sm:mx-auto overflow-hidden flex items-center justify-center;
+}
+
+.scroll_div::-webkit-scrollbar {
+  display: none;
+}
+
+.blurry {
+  background: rgba(0, 0, 0, 0.142);
+  backdrop-filter: blur(10px);
+  backface-visibility: hidden;
+}
+
+.blurryTxt {
+  background-color: #ff00eaac;
+  backdrop-filter: blur(10px);
+  backface-visibility: hidden;
 }
