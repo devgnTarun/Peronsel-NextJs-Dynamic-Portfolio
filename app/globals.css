@@ -111,7 +111,7 @@
 
 .card_box {
   margin: 10px auto;
-  animation: 15s slide infinite linear;
+  animation: 25s slide infinite linear;
   display: flex;
   width: 2500px;
   background-color: none;

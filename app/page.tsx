@@ -1,4 +1,6 @@
 import About from '@/component/About'
+import Contact from '@/component/Contact'
+import Experience from '@/component/Experience'
 import Projects from '@/component/Projects'
 import Services from '@/component/Services'
 import Skill from '@/component/Skill'
@@ -43,6 +45,8 @@ export default function Home() {
       <Skill />
       <Projects />
       <Services />
+      <Experience />
+      <Contact />
     </>
   )
 }

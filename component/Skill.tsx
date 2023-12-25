@@ -1,9 +1,9 @@
 
 const Skill = () => {
     return (
-        <div className="w-full flex-col items-center justify-center mt-[80px] relative">
+        <div className="w-full flex-col items-center justify-center mt-[80px] relative ">
             <h1 className="heading">Core Skills</h1>
-            <div className="service_box my-[50px]">
+            <div className="service_box my-[50px] ">
                 <div className="card_box">
                     <div className="float"><h3>Angular</h3></div>
                     <div className="float"><h3>Next.js</h3></div>
