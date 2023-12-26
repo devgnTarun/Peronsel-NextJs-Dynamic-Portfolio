@@ -1,10 +1,8 @@
-import Form from "./Form"
+import Form from "@/component/Form"
 
-const Contact = () => {
-
+const page = () => {
     return (
-        <div className="w-full flex-col items-center justify-center md:mt-[20px] mt-[80px] relative ">
-            <h1 className="heading">Contact </h1>
+        <div className="w-full flex-col items-center justify-center md:mt-[100px] mt-[80px] relative ">
 
             <Form />
 
@@ -18,4 +16,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default page

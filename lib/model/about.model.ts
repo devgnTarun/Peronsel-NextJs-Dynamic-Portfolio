@@ -13,6 +13,7 @@ const aboutSchema = new mongoose.Schema({
     skills: [{ name: { type: String } }]
 })
 
-const About = mongoose.models.About || mongoose.model('About', aboutSchema);
+const About = mongoose.model('About', aboutSchema);
+// const About = mongoose.models.About || mongoose.model('About', aboutSchema);
 
 export default About; 

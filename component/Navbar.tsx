@@ -9,7 +9,7 @@ const Navbar = () => {
                 <div className="flex gap-[15px]">
                     <Link className="text-sm text-white hover:text-yellow-300" href='/skills'>Skills</Link>
                     <Link className="text-sm text-white hover:text-yellow-300" href='/projects'>Projects</Link>
-                    <Link className="text-sm text-white hover:text-yellow-300" href='/experience'>Experience</Link>
+                    <Link className="text-sm text-white hover:text-yellow-300" href='/contact'>Contact</Link>
                 </div>
             </div>
         </>

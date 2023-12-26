@@ -1,6 +1,8 @@
 import { revalidatePath } from "next/cache";
 import { connectToDb } from "../db";
 import About from "../model/about.model";
+import { AboutType, ContactForm } from "@/types";
+import { sendMessage } from "../bot";
 
 
 export async function getAbout() {
@@ -27,5 +29,13 @@ export async function createAbout(aboutData: AboutType) {
 
     } catch (error: any) {
         console.log({ message: error.message })
+    }
+}
+
+export async function contactBot(formData: ContactForm) {
+    try {
+        await sendMessage(formData);
+    } catch (error) {
+        console.log(`Error in contact form`, error)
     }
 }
