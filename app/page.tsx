@@ -22,7 +22,7 @@ export default function Home() {
           <Button />
           <div className="w-full flex gap-[30px] my-4 items-center md:justify-start justify-center ">
             <Link className='text-white text-md hover:text-black' href={'https://github.com/devgnTarun'} target='_blank'><FontAwesomeIcon icon={faGithub} className='xs:w-[30px] w-[25px] xs:h-[30px] h-[25px]' /></Link>
-            <Link className='text-white text-md hover:text-red-600' href={'https://www.youtube.com/channel/UCIHoRXRtf5xdJWTIVR9M24Q'}><FontAwesomeIcon icon={faYoutube} className='xs:w-[30px] w-[25px] xs:h-[30px] h-[25px]' /></Link>
+            <Link className='text-white text-md hover:text-red-600' href={''}><FontAwesomeIcon icon={faYoutube} className='xs:w-[30px] w-[25px] xs:h-[30px] h-[25px]' /></Link>
             <Link className='text-white text-md hover:text-blue-500' href={'https://www.linkedin.com/in/tarun-devgan-0b8013235/'}><FontAwesomeIcon icon={faLinkedin} className='xs:w-[30px] w-[25px] xs:h-[30px] ' /></Link>
           </div>
           <div className="white__gradient absolute w-[200px] h-[200px] top-0 left-0 "></div>
